@@ -1,0 +1,17 @@
+{
+  "name": "@marvolo/icons",
+  "version": "0.1.9",
+  "publishConfig": {
+    "prepublishOnly": "npm run build"
+  },
+  "scripts": {
+    "build": "icon-font-generator src/*.svg -o dist -p mui-icon --height=512"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "icon-font-generator": "^2.1.8"
+  }
+}
